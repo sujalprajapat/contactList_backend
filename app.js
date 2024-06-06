@@ -14,7 +14,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(cors(
   {
-    origin:"http://localhost:3000",
+    origin:"https://contact-list-frontend-tan.vercel.app",
     methods:["POST","GET","PATCH","DELETE"],
     credentials : true,
   }
