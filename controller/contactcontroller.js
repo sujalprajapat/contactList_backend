@@ -30,4 +30,11 @@ exports.updatecontact = async (req, res)=> {
         data,
     })
 }
+exports.getcontactById = async (req, res)=> {
+    var data = await contact.find({firstName:req.params.name});
+    res.status(200).json({
+        status : "data get",
+        data,
+    })
+}
 
